@@ -1,6 +1,6 @@
 # sub_detector
 simple subDomain detector
-and check this domain is work or down
+and check this domain is working or down
 
 # Usage:
 bash sub_detector.sh website
