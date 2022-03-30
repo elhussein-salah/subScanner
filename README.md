@@ -2,7 +2,7 @@
 Simple subdomain detector
 and check this domain is working or down
 
-#Requerments:
+# Requerments:
 sudo apt install assetfinder
 
 # Usage:
