@@ -1,4 +1,4 @@
-# sub_detector
+# subdomain detector
 Simple subdomain detector
 and check this domain is working or not
 # Requerments:
