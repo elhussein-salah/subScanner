@@ -1,7 +1,6 @@
 # sub_detector
 Simple subdomain detector
-and check this domain is working or down
-
+and check this domain is working or not
 # Requerments:
 sudo apt install assetfinder
 
