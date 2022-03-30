@@ -4,5 +4,5 @@ simple subDomain detector
 # Usage:
 bash sub_detector.sh website
 
-# example:
+# Example:
 bash sub_detector.sh yahoo.com
