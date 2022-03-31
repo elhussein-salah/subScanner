@@ -27,3 +27,4 @@ fi
 
 done
 echo "number of subdomain is $c"
+echo "github :https://github.com/ELHussein565"
