@@ -23,17 +23,22 @@ do
 if [[ `ping -c 1 $sub 2> /dev/null` ]]
 then
 echo "$sub +++++++++++> pong"
-mkdir $sub
-cd $sub
-echo $sub > $sub.txt
-cd ..
 if [ ! -z $typeScan ];then
 if [[ $typeScan == 1 ]];then
-nmap -T4 $sub | tee -a $sub.text
+mkdir $sub
+cd $sub
+nmap -T4 $sub | tee -a $sub.txt
+cd ..
 elif [[ $typeScan ==  2 ]];then
-nmap $sub | tee -a $sub.text
+mkdir $sub
+cd $sub
+nmap $sub | tee -a $sub.txt
+cd ..
 elif [[ $typeScan == 3 ]];then
-nmap -sV $sub  | tee -a $sub.text
+mkdir $sub
+cd $sub
+nmap -sV $sub  | tee -a $sub.txt
+cd ..
 fi
 else
 echo "you don't select type scanning!!!"
@@ -44,6 +49,5 @@ echo "$sub -----------> error/down"
  (( c++ ))
 fi
 done
-echo "number of subdomain is $c"
-
+echo -e "\nnumber of subdomain is $c\n"
 echo "github: https://github.com/ELHussein565"
