@@ -6,7 +6,9 @@ RED="\e[31m"
 GREEN="\e[32m"
 BLUE="\e[34m"
 YELLOW="\e[33m"
+BLACK="\e[30m"
 BGYELLOW="\\e[0;43m"
+BGRED="\\e[1;41m"
 ENDCOLOR="\e[0m"
 
 if [ -z $url ];then
@@ -23,7 +25,7 @@ cd $url
 fi
 fi
 assetfinder $url > subs.txt
-echo -e "${BGYELLOW}[+]=:>All subdomain in file (subs.txt)${ENDCOLOR}"
+echo -e "${BLACK}${BGRED}[+]All subdomain in file: ==${GREEN}>subs.txt${ENDCOLOR}"
 c=0
 for sub in `cat subs.txt`
 do
