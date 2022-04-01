@@ -14,6 +14,7 @@ echo "Example -> bash sub_detector.sh yahoo.com {number of type Scanning}"
 echo "select type Scanner ports {1->quick scan | 2-> frist 1000 ports | 3-> aggressive}"
 exit
 else
+echo -e "author:R3||S7S"
 if [ ! -d $url ];then
 mkdir $url
 cd $url
@@ -55,4 +56,4 @@ echo -e "${RED}$sub -----------> error/down${ENDCOLOR}"
 fi
 done
 echo -e "${GREEN}\nnumber of subdomain is $c${ENDCOLOR}"
-echo -e "\n${BLUE}github: https://github.com/ELHussein565\ntwitter : https://twitter.com/elhusseinsalah${ENDCOLOR}"
+echo -e "\n${BLUE}github: https://github.com/ELHussein565\ntwitter: https://twitter.com/elhusseinsalah${ENDCOLOR}"
