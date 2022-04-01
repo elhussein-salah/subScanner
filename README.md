@@ -1,5 +1,6 @@
 # subdomain detector
-- Simple subdomain detector and check this domain is working or not and scan ports
+- bash script automation to search auto subdomain websites and scan these ports 🤖. 
+- Don't forget to give me your opinion 🤍.
 ## Requerments:
 - sudo apt install assetfinder
 - sudo apt install nmap
