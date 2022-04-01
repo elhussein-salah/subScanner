@@ -14,6 +14,7 @@
 #2 without port scanning
  bash sub_detector.sh yahoo.com
 ```
-author by : R3-S7s
+author : R3-S7s
 
 twitter : https://twitter.com/elhusseinsalah
+github  : https://github.com/ELHussein565
