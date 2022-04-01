@@ -5,7 +5,7 @@ typeScan=$2
 RED="\e[31m"
 GREEN="\e[32m"
 BLUE="\e[34m"
-BGYELLOW="\[43m"
+BGYELLOW="\\e[0;43m"
 ENDCOLOR="\e[0m"
 
 if [ -z $url ];then
@@ -46,7 +46,7 @@ nmap -sV $sub  | tee -a $sub.txt
 cd ..
 fi
 else
-echo -e "${RED}you don't select type scanning!!!${ENDCOLOR}"
+echo -e "${RED}You have not selected type scanning!!!${ENDCOLOR}"
 fi
 (( c++ ))
 else
@@ -54,5 +54,5 @@ echo -e "${RED}$sub -----------> error/down${ENDCOLOR}"
  (( c++ ))
 fi
 done
-echo -e "${BGYELLOW}\nnumber of subdomain is $c\n${ENDCOLOR}"
-echo -e "${BLUE}github: https://github.com/ELHussein565${ENDCOLOR}"
+echo -e "${GREEN}\nnumber of subdomain is $c${ENDCOLOR}"
+echo -e "\n${BLUE}github: https://github.com/ELHussein565${ENDCOLOR}"
