@@ -1,4 +1,4 @@
-# subdomain detector
+# subdomain Scanner
 - bash script subdomain Scanner and port Scanner 🤖. 
 ## Requerments:
 - sudo apt install assetfinder
