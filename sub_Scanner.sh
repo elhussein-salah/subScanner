@@ -5,6 +5,7 @@ typeScan=$2
 RED="\e[31m"
 GREEN="\e[32m"
 BLUE="\e[34m"
+YELLOW="\e[33m"
 BGYELLOW="\\e[0;43m"
 ENDCOLOR="\e[0m"
 
@@ -27,15 +28,15 @@ for sub in `cat subs.txt`
 do
 if [[ `ping -c 1 $sub 2> /dev/null` ]]
 then
-echo -e "${GREEN}${sub} +++++++++++> pong${ENDCOLOR}"
+echo -e "${GREEN}${sub} [+]========> pong${ENDCOLOR}"
 if [ ! -z $typeScan ];then
 if [[ $typeScan == 1 ]];then
 mkdir $sub
 cd $sub
 
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
-echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
 
 nmap -T4 $sub | tee -a $sub.txt
 cd ..
@@ -43,9 +44,9 @@ elif [[ $typeScan ==  2 ]];then
 mkdir $sub
 cd $sub
 
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
-echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
 
 nmap $sub | tee -a $sub.txt
 cd ..
@@ -53,9 +54,9 @@ elif [[ $typeScan == 3 ]];then
 mkdir $sub
 cd $sub
 
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
-echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
-echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
+echo -e "${YELLOW}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${YELLOW}+===============================================+${ENDCOLOR}"
 
 
 nmap -sV $sub  | tee -a $sub.txt
@@ -66,7 +67,7 @@ echo -e "${RED}You have not selected type scanning!!!${ENDCOLOR}"
 fi
 (( c++ ))
 else
-echo -e "${RED}$sub -----------> error/down${ENDCOLOR}"
+echo -e "${RED}$sub [-]========> error/down${ENDCOLOR}"
  (( c++ ))
 fi
 done
