@@ -14,7 +14,6 @@ echo "Example -> bash sub_detector.sh yahoo.com {number of type Scanning}"
 echo "select type Scanner ports {1->quick scan | 2-> frist 1000 ports | 3-> aggressive}"
 exit
 else
-echo -e "${BLUE}author:R3||S7S${ENDCOLOR}"
 if [ ! -d $url ];then
 mkdir $url
 cd $url
@@ -33,16 +32,32 @@ if [ ! -z $typeScan ];then
 if [[ $typeScan == 1 ]];then
 mkdir $sub
 cd $sub
+
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+
 nmap -T4 $sub | tee -a $sub.txt
 cd ..
 elif [[ $typeScan ==  2 ]];then
 mkdir $sub
 cd $sub
+
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+
 nmap $sub | tee -a $sub.txt
 cd ..
 elif [[ $typeScan == 3 ]];then
 mkdir $sub
 cd $sub
+
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+echo -e "${GREEN}| [+] Scanning $sub with Nmap ...    |${ENDCOLOR}"
+echo -e "${GREEN}+===============================================+${ENDCOLOR}"
+
+
 nmap -sV $sub  | tee -a $sub.txt
 cd ..
 fi
@@ -56,4 +71,4 @@ echo -e "${RED}$sub -----------> error/down${ENDCOLOR}"
 fi
 done
 echo -e "${GREEN}\nnumber of subdomain is $c${ENDCOLOR}"
-echo -e "\n${BLUE}github: https://github.com/ELHussein565\ntwitter: https://twitter.com/elhusseinsalah${ENDCOLOR}"
+echo -e "\n${BLUE}github: https://github.com/ELHussein565\ntwitter : https://twitter.com/elhusseinsalah${ENDCOLOR}"
