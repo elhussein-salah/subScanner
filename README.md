@@ -12,4 +12,5 @@ and check this domain is working or not and scan ports
  bash sub_detector.sh yahoo.com 1
 ```
 dev by : R3-S7s
+
 twitter : https://twitter.com/elhusseinsalah
