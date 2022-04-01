@@ -23,6 +23,7 @@ cd $url
 fi
 fi
 assetfinder $url > subs.txt
+echo -e "${BGYELLOW}[+]=:>All subdomain in file (subs.txt)${ENDCOLOR}"
 c=0
 for sub in `cat subs.txt`
 do
