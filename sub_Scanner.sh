@@ -68,12 +68,11 @@ fi
 else
 echo -e "${RED}You have not selected type scanning!!!${ENDCOLOR}"
 fi
-#(( c++ ))
+(( c++ ))
 else
 echo -e "${RED}$sub [-]========> error/down${ENDCOLOR}"
- #(( c++ ))
+(( c++ ))
 fi
 done
-c= `wc -l sub.txt`
 echo -e "${GREEN}\nnumber of subdomain is $c${ENDCOLOR}"
 echo -e "\n${BLUE}github: https://github.com/r3x07x\ntwitter : https://twitter.com/elhusseinsalah${ENDCOLOR}"
