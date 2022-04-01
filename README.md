@@ -1,6 +1,5 @@
 # subdomain detector
-- bash script automation to search auto subdomain websites and scan these ports 🤖. 
-- Don't forget to give me your opinion 🤍.
+- bash script subdomain Scanner and port Scanner 🤖. 
 ## Requerments:
 - sudo apt install assetfinder
 - sudo apt install nmap
@@ -14,6 +13,7 @@
 #2 without port scanning
  bash sub_detector.sh yahoo.com
 ```
+- Don't forget to give me your opinion 🤍.
 - author : ELHussein (R3||S7S)
 
 - twitter : https://twitter.com/elhusseinsalah
