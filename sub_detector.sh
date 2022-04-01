@@ -9,7 +9,7 @@ BGYELLOW="\\e[0;43m"
 ENDCOLOR="\e[0m"
 
 if [ -z $url ];then
-echo -e "${RED}Error: Enter website! :)${ENDCOLOR}"
+echo -e "${RED}Missing argument: Enter website!${ENDCOLOR}"
 echo "Example -> bash sub_detector.sh yahoo.com {number of type Scanning}"
 echo "select type Scanner ports {1->quick scan | 2-> frist 1000 ports | 3-> aggressive}"
 exit
