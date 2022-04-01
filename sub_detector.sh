@@ -55,4 +55,4 @@ echo -e "${RED}$sub -----------> error/down${ENDCOLOR}"
 fi
 done
 echo -e "${GREEN}\nnumber of subdomain is $c${ENDCOLOR}"
-echo -e "\n${BLUE}github: https://github.com/ELHussein565${ENDCOLOR}"
+echo -e "\n${BLUE}github: https://github.com/ELHussein565\ntwitter : https://twitter.com/elhusseinsalah${ENDCOLOR}"
