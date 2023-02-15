@@ -1,5 +1,11 @@
 # subdomain Scanner
 - bash script subdomain Scanner and port Scanner 🤖. 
+
+## Legal Disclamer:
+    The author does not hold any responsibility for the bad use of this tool,
+    remember this is only for educational purpose.
+
+
 ## Requerments:
 - sudo apt install assetfinder
 - sudo apt install nmap
